@@ -14,7 +14,6 @@
 		BFF261F11B66459000C5552D /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF261F01B66459000C5552D /* Argo.framework */; };
 		BFF261F31B66459F00C5552D /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF261F21B66459F00C5552D /* Argo.framework */; };
 		BFF261F81B66496F00C5552D /* OgraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261F61B66496F00C5552D /* OgraModel.swift */; };
-		BFFBEDA51B66EF46004DCB22 /* Argo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFF261F21B66459F00C5552D /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFFBEDA71B66F2D1004DCB22 /* Argo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFF261F21B66459F00C5552D /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BFFBEDA51B66EF46004DCB22 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
