@@ -28,7 +28,7 @@ extension User: Decodable, Encodable {
 	static func create(id: Int)(name: String)(email: String?)(pet: Pet?)(nicknames: [String]?)(accounts: [String:String]?) -> User {
 		return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames, accounts:accounts)
 	}
-	
+
 	static func decode(j: JSON) -> Decoded<User> {
 		return create
 			<^> j <|   "id"
