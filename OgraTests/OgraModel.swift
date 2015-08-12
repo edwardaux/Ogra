@@ -47,7 +47,7 @@ extension User: Decodable, Encodable {
 			"pet"       : self.pet.encode(),
 			"nicknames" : self.nicknames.encode(),
 			"accounts"  : self.accounts.encode()
-			])
+		])
 	}
 }
 
