@@ -74,10 +74,16 @@ extension Dictionary where Key: StringLiteralConvertible, Value: Encodable {
 	}
 }
 
-extension Array where Element: Encodable {
-	public func encode() -> JSON {
-		return JSON.Array(self.map { $0.encode() })
-	}
+extension CollectionType where Self.Generator.Element: Encodable {
+    public func encode() -> JSON {
+        return JSON.Array(self.map { $0.encode() })
+    }
+}
+
+extension Optional where T: CollectionType, T.Generator.Element: Encodable {
+    public func encode() -> JSON {
+        return self.map { $0.encode() } ?? .Null
+    }
 }
 
 extension JSON {

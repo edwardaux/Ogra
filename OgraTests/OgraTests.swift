@@ -18,7 +18,7 @@ class OgraTests: XCTestCase {
 	}
 	
 	func testNullPet() {
-		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":null }")
+		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":null, \"nicknames\":[\"Johnny\"] }")
 		let user = User.decode(jsonIn).value!
 		let jsonOut = user.encode()
 		
@@ -26,7 +26,7 @@ class OgraTests: XCTestCase {
 	}
 	
 	func testWithPet() {
-		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":{\"name\":\"Rex\"} }")
+		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":{\"name\":\"Rex\"}, \"nicknames\":[\"Johnny\"] }")
 		let user = User.decode(jsonIn).value!
 		let jsonOut = user.encode()
 		
@@ -34,7 +34,7 @@ class OgraTests: XCTestCase {
 	}
 
 	func testPassingToJSONSerialization() {
-		let json = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":{\"name\":\"Rex\"} }")
+		let json = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":{\"name\":\"Rex\"}, \"nicknames\":[\"Johnny\"] }")
 		let user = User.decode(json).value!
 
 		let jsonObject = user.encode().JSONObject()
