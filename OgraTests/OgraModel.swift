@@ -17,6 +17,7 @@ struct User {
 	let email: String?
 	let pet: Pet?
     let nicknames: [String]?
+    let accounts: [String:String]?
 }
 struct Pet {
 	let name: String
@@ -24,8 +25,8 @@ struct Pet {
 
 // MARK: - JSON Encoding and Decoding
 extension User: Decodable, Encodable {
-    static func create(id: Int)(name: String)(email: String?)(pet: Pet?)(nicknames: [String]?) -> User {
-        return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames)
+    static func create(id: Int)(name: String)(email: String?)(pet: Pet?)(nicknames: [String]?)(accounts: [String:String]?) -> User {
+        return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames, accounts:accounts)
     }
     
     static func decode(j: JSON) -> Decoded<User> {
@@ -35,6 +36,7 @@ extension User: Decodable, Encodable {
             <*> j <|?  "email"
             <*> j <|?  "pet"
             <*> j <||? "nicknames"
+            <*> .optional(flatReduce(["accounts"], initial: j, combine: decodedJSON) >>- Dictionary<String, String>.decode)
     }
     
     func encode() -> JSON {
@@ -43,7 +45,8 @@ extension User: Decodable, Encodable {
             "name"      : self.name.encode(),
             "email"     : self.email.encode(),
             "pet"       : self.pet.encode(),
-            "nicknames" : self.nicknames.encode()
+            "nicknames" : self.nicknames.encode(),
+            "accounts"  : self.accounts.encode()
         ])
     }
 }

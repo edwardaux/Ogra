@@ -62,19 +62,23 @@ extension Optional where T: Encodable {
 		case .Some(let v): return v.encode()
 		}
 	}
+extension CollectionType where Generator.Element == (Key: StringLiteralConvertible, Value: Encodable) {
+    public func encode() -> JSON {
+        var values = [String : JSON]()
+        for (key, value) in self {
+            values[String(key)] = value.encode()
+        }
+        return .Object(values)
+    }
 }
 
-extension Dictionary where Key: StringLiteralConvertible, Value: Encodable {
-	public func encode() -> JSON {
-		var values = [String : JSON]()
-		for (key, value) in self {
-			values[String(key)] = value.encode()
-		}
-		return .Object(values)
-	}
+extension Optional where T: CollectionType, T.Generator.Element == (Key: StringLiteralConvertible, Value: Encodable) {
+    public func encode() -> JSON {
+        return self.map { $0.encode() } ?? .Null
+    }
 }
 
-extension CollectionType where Self.Generator.Element: Encodable {
+extension CollectionType where Generator.Element: Encodable {
     public func encode() -> JSON {
         return JSON.Array(self.map { $0.encode() })
     }
