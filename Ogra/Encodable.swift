@@ -62,6 +62,8 @@ extension Optional where T: Encodable {
 		case .Some(let v): return v.encode()
 		}
 	}
+}
+
 extension CollectionType where Self: DictionaryLiteralConvertible, Self.Key: StringLiteralConvertible, Self.Value: Encodable, Generator.Element == (Self.Key, Self.Value) {
     public func encode() -> JSON {
         var values = [String : JSON]()
