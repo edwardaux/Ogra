@@ -64,7 +64,7 @@ extension Optional where T: Encodable {
 	}
 }
 
-extension Dictionary where Key: StringLiteralConvertible, Value: Encodable {
+extension CollectionType where Self: DictionaryLiteralConvertible, Self.Key: StringLiteralConvertible, Self.Value: Encodable, Generator.Element == (Self.Key, Self.Value) {
 	public func encode() -> JSON {
 		var values = [String : JSON]()
 		for (key, value) in self {
@@ -74,9 +74,21 @@ extension Dictionary where Key: StringLiteralConvertible, Value: Encodable {
 	}
 }
 
-extension Array where Element: Encodable {
+extension Optional where T: protocol<CollectionType, DictionaryLiteralConvertible>, T.Key: StringLiteralConvertible, T.Value: Encodable, T.Generator.Element == (T.Key, T.Value) {
+	public func encode() -> JSON {
+		return self.map { $0.encode() } ?? .Null
+	}
+}
+
+extension CollectionType where Generator.Element: Encodable {
 	public func encode() -> JSON {
 		return JSON.Array(self.map { $0.encode() })
+	}
+}
+
+extension Optional where T: CollectionType, T.Generator.Element: Encodable {
+	public func encode() -> JSON {
+		return self.map { $0.encode() } ?? .Null
 	}
 }
 
