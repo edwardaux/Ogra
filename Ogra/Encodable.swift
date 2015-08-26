@@ -55,7 +55,7 @@ extension UInt: Encodable {
 	}
 }
 
-extension Optional where T: Encodable {
+extension Optional where Wrapped: Encodable {
 	public func encode() -> JSON {
 		switch self {
 		case .None:        return .Null
@@ -74,7 +74,7 @@ extension CollectionType where Self: DictionaryLiteralConvertible, Self.Key: Str
 	}
 }
 
-extension Optional where T: protocol<CollectionType, DictionaryLiteralConvertible>, T.Key: StringLiteralConvertible, T.Value: Encodable, T.Generator.Element == (T.Key, T.Value) {
+extension Optional where Wrapped: protocol<CollectionType, DictionaryLiteralConvertible>, Wrapped.Key: StringLiteralConvertible, Wrapped.Value: Encodable, Wrapped.Generator.Element == (Wrapped.Key, Wrapped.Value) {
 	public func encode() -> JSON {
 		return self.map { $0.encode() } ?? .Null
 	}
@@ -86,7 +86,7 @@ extension CollectionType where Generator.Element: Encodable {
 	}
 }
 
-extension Optional where T: CollectionType, T.Generator.Element: Encodable {
+extension Optional where Wrapped: CollectionType, Wrapped.Generator.Element: Encodable {
 	public func encode() -> JSON {
 		return self.map { $0.encode() } ?? .Null
 	}
