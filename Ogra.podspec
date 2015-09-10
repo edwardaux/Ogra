@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Ogra"
   s.version          = "1.2"
-  s.summary          = "Sync capabilities for Realm"
+  s.summary          = "Provides the ability to convert from a model object into an Argo JSON representation."
   s.description      = <<-DESC
                        * Markdown format.
                        DESC
