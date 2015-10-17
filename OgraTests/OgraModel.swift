@@ -23,6 +23,41 @@ struct Pet {
 	let name: String
 }
 
+enum Continent: String {
+    case Asia
+    case Africa
+    case NorthAmerica = "North America"
+    case SouthAmerica = "South America"
+    case Antarctica
+    case Europe
+    case Australia
+}
+
+enum IntBulls: Int {
+    case Jordan = 23
+    case Pippen = 33
+    case Rodman = 91
+}
+
+enum DoubleBulls: Double {
+    case Jordan = 23
+    case Pippen = 33
+    case Rodman = 91
+}
+
+enum FloatBulls: Float {
+    case Jordan = 23
+    case Pippen = 33
+    case Rodman = 91
+}
+
+enum UIntBulls: UInt {
+    case Jordan = 23
+    case Pippen = 33
+    case Rodman = 91
+}
+
+
 // MARK: - JSON Encoding and Decoding
 extension User: Decodable, Encodable {
 	static func create(id: Int)(name: String)(email: String?)(pet: Pet?)(nicknames: [String]?)(accounts: [String:String]?) -> User {
@@ -67,3 +102,10 @@ extension Pet: Decodable, Encodable {
 		])
 	}
 }
+
+extension Continent: Decodable, Encodable {}
+
+extension IntBulls: Decodable, Encodable {}
+extension DoubleBulls: Encodable {}
+extension FloatBulls: Encodable {}
+extension UIntBulls: Encodable {}
