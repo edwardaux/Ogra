@@ -84,7 +84,7 @@ class OgraTests: XCTestCase {
     }
     
     func testRawRepresentableFloatType() {
-        let dialingCode: DoubleDialingCode = .UnitedStates
+        let dialingCode: FloatDialingCode = .UnitedStates
         let json: JSON = .Number(dialingCode.rawValue)
         let encoded = dialingCode.encode()
         XCTAssertEqual(json, encoded)
