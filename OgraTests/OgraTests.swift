@@ -61,4 +61,39 @@ class OgraTests: XCTestCase {
 		// a nil) then we would have trapped by now
 		print(string)
 	}
+    
+    func testRawRepresentableStringType() {
+        let continent: Continent = .NorthAmerica
+        let json: JSON = .String(continent.rawValue)
+        let encoded = continent.encode()
+        XCTAssertEqual(json, encoded)
+    }
+    
+    func testRawRepresentableIntType() {
+        let dialingCode: IntDialingCode = .UnitedStates
+        let json: JSON = .Number(dialingCode.rawValue)
+        let encoded = dialingCode.encode()
+        XCTAssertEqual(json, encoded)
+    }
+    
+    func testRawRepresentableDoubleType() {
+        let dialingCode: DoubleDialingCode = .UnitedStates
+        let json: JSON = .Number(dialingCode.rawValue)
+        let encoded = dialingCode.encode()
+        XCTAssertEqual(json, encoded)
+    }
+    
+    func testRawRepresentableFloatType() {
+        let dialingCode: DoubleDialingCode = .UnitedStates
+        let json: JSON = .Number(dialingCode.rawValue)
+        let encoded = dialingCode.encode()
+        XCTAssertEqual(json, encoded)
+    }
+    
+    func testRawRepresentableUIntType() {
+        let dialingCode: UIntDialingCode = .UnitedStates
+        let json: JSON = .Number(dialingCode.rawValue)
+        let encoded = dialingCode.encode()
+        XCTAssertEqual(json, encoded)
+    }
 }
