@@ -92,6 +92,36 @@ extension Optional where Wrapped: CollectionType, Wrapped.Generator.Element: Enc
 	}
 }
 
+extension Encodable where Self: RawRepresentable, Self.RawValue == String {
+    public func encode() -> JSON {
+        return .String(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == Int {
+    public func encode() -> JSON {
+        return .Number(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == Double {
+    public func encode() -> JSON {
+        return .Number(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == Float {
+    public func encode() -> JSON {
+        return .Number(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == UInt {
+    public func encode() -> JSON {
+        return .Number(self.rawValue)
+    }
+}
+
 extension JSON {
 	public func JSONObject() -> AnyObject {
 		switch self {
