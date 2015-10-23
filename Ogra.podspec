@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/edwardaux/Ogra.git", :tag => "#{s.version.to_s}" }
 
   s.dependency 'Argo'
-  s.source_files = 'Ogra/**/*.swift'
+  s.source_files = 'Ogra/**/*.{h,swift}'
 end
