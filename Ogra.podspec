@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Ogra"
-  s.version          = "1.2"
+  s.version          = "2.1.0"
   s.summary          = "Provides the ability to convert from a model object into an Argo JSON representation."
   s.description      = <<-DESC
                        * Markdown format.
