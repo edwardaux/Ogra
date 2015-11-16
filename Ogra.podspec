@@ -2,9 +2,7 @@ Pod::Spec.new do |s|
   s.name             = "Ogra"
   s.version          = "2.1.0"
   s.summary          = "Provides the ability to convert from a model object into an Argo JSON representation."
-  s.description      = <<-DESC
-                       * Markdown format.
-                       DESC
+  s.description      = "A companion project for the Argo library that facilitates converting back from model objects into JSON"
   s.homepage         = "https://github.com/edwardaux/Ogra"
   s.license          = 'MIT'
   s.author           = "Craig Edwards"
@@ -12,4 +10,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'Argo'
   s.source_files = 'Ogra/**/*.{h,swift}'
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.9'
 end
