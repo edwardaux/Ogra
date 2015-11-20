@@ -7,49 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5559D75A1BFF896B00DBE126 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
+		5559D75B1BFF897100DBE126 /* Ogra.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF261B61B66432500C5552D /* Ogra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5559D75C1BFF897800DBE126 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
+		5559D75D1BFF897C00DBE126 /* Ogra.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF261B61B66432500C5552D /* Ogra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5559D7671BFF8A4A00DBE126 /* Ogra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D7431BFF894B00DBE126 /* Ogra.framework */; };
+		5559D7761BFF8A7200DBE126 /* Ogra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF261B31B66432500C5552D /* Ogra.framework */; };
+		5559D7851BFF8A9900DBE126 /* Ogra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF261D21B66435100C5552D /* Ogra.framework */; };
+		5559D78B1BFF8AF600DBE126 /* OgraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261F61B66496F00C5552D /* OgraModel.swift */; };
+		5559D78C1BFF8AF600DBE126 /* OgraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261C21B66432500C5552D /* OgraTests.swift */; };
+		5559D78D1BFF8AF600DBE126 /* OgraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261F61B66496F00C5552D /* OgraModel.swift */; };
+		5559D78E1BFF8AF600DBE126 /* OgraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261C21B66432500C5552D /* OgraTests.swift */; };
+		5559D78F1BFF8AF700DBE126 /* OgraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261F61B66496F00C5552D /* OgraModel.swift */; };
+		5559D7901BFF8AF700DBE126 /* OgraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261C21B66432500C5552D /* OgraTests.swift */; };
+		5559D7981BFF8BE900DBE126 /* Ogra.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF261B61B66432500C5552D /* Ogra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5559D79B1BFF8C3B00DBE126 /* Argo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5559D79A1BFF8C3B00DBE126 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5559D79F1BFF8C8700DBE126 /* Argo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5559D79E1BFF8C8700DBE126 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5559D7A01BFF8CAB00DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D79E1BFF8C8700DBE126 /* Argo.framework */; };
+		5559D7A11BFF8CE300DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D79A1BFF8C3B00DBE126 /* Argo.framework */; };
+		5559D7A21BFF8CF200DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D79E1BFF8C8700DBE126 /* Argo.framework */; };
+		5559D7A41BFF8D1B00DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D7A31BFF8D1B00DBE126 /* Argo.framework */; };
+		5559D7A71BFF8D4200DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D7A61BFF8D4200DBE126 /* Argo.framework */; };
+		5559D7A91BFF8D7E00DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D7A31BFF8D1B00DBE126 /* Argo.framework */; };
+		5559D7AB1BFF8D8B00DBE126 /* Argo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5559D7A31BFF8D1B00DBE126 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFF261B71B66432500C5552D /* Ogra.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF261B61B66432500C5552D /* Ogra.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFF261E11B66435100C5552D /* OgraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E01B66435100C5552D /* OgraTests.swift */; };
 		BFF261EA1B6643A000C5552D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
 		BFF261EB1B6643A000C5552D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
-		BFF261F11B66459000C5552D /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF261F01B66459000C5552D /* Argo.framework */; };
-		BFF261F31B66459F00C5552D /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF261F21B66459F00C5552D /* Argo.framework */; };
-		BFF261F81B66496F00C5552D /* OgraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261F61B66496F00C5552D /* OgraModel.swift */; };
-		BFFBEDA71B66F2D1004DCB22 /* Argo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFF261F21B66459F00C5552D /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BFF261DD1B66435100C5552D /* PBXContainerItemProxy */ = {
+		5559D7681BFF8A4A00DBE126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF261AA1B66432500C5552D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5559D7421BFF894B00DBE126;
+			remoteInfo = "Orga-tvOS";
+		};
+		5559D7771BFF8A7200DBE126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF261AA1B66432500C5552D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFF261B21B66432500C5552D;
+			remoteInfo = "Ogra-iOS";
+		};
+		5559D7861BFF8A9900DBE126 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFF261AA1B66432500C5552D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BFF261D11B66435100C5552D;
-			remoteInfo = Ogra;
+			remoteInfo = "Ogra-Mac";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BFFBEDA41B66EF3E004DCB22 /* CopyFiles */ = {
+		5559D7921BFF8B1400DBE126 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5559D79B1BFF8C3B00DBE126 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFFBEDA61B66F2CA004DCB22 /* CopyFiles */ = {
+		5559D7951BFF8B6400DBE126 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BFFBEDA71B66F2D1004DCB22 /* Argo.framework in CopyFiles */,
+				5559D79F1BFF8C8700DBE126 /* Argo.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D7AA1BFF8D8300DBE126 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5559D7AB1BFF8D8B00DBE126 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5559D7361BFF893A00DBE126 /* Ogra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ogra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5559D7431BFF894B00DBE126 /* Ogra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ogra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5559D7621BFF8A4A00DBE126 /* OgraTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OgraTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5559D7711BFF8A7200DBE126 /* OgraTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OgraTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5559D7801BFF8A9900DBE126 /* OgraTests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OgraTests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5559D79A1BFF8C3B00DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/Mac/Argo.framework; sourceTree = "<group>"; };
+		5559D79E1BFF8C8700DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
+		5559D7A31BFF8D1B00DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/tvOS/Argo.framework; sourceTree = "<group>"; };
+		5559D7A61BFF8D4200DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/watchOS/Argo.framework; sourceTree = "<group>"; };
 		BFCCEBBF1B684613000BDFB5 /* licence.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = licence.md; sourceTree = "<group>"; };
 		BFF261B31B66432500C5552D /* Ogra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ogra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF261B61B66432500C5552D /* Ogra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ogra.h; sourceTree = "<group>"; };
@@ -57,22 +109,59 @@
 		BFF261C21B66432500C5552D /* OgraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OgraTests.swift; sourceTree = "<group>"; };
 		BFF261C41B66432500C5552D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFF261D21B66435100C5552D /* Ogra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ogra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFF261DB1B66435100C5552D /* OgraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OgraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFF261E01B66435100C5552D /* OgraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OgraTests.swift; sourceTree = "<group>"; };
-		BFF261E21B66435100C5552D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFF261E91B6643A000C5552D /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
-		BFF261F01B66459000C5552D /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
-		BFF261F21B66459F00C5552D /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/Mac/Argo.framework; sourceTree = "<group>"; };
 		BFF261F51B66471600C5552D /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		BFF261F61B66496F00C5552D /* OgraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OgraModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5559D7321BFF893A00DBE126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D7A71BFF8D4200DBE126 /* Argo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D73F1BFF894B00DBE126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D7A41BFF8D1B00DBE126 /* Argo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D75F1BFF8A4A00DBE126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D7A91BFF8D7E00DBE126 /* Argo.framework in Frameworks */,
+				5559D7671BFF8A4A00DBE126 /* Ogra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D76E1BFF8A7200DBE126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D7A01BFF8CAB00DBE126 /* Argo.framework in Frameworks */,
+				5559D7761BFF8A7200DBE126 /* Ogra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D77D1BFF8A9900DBE126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D7851BFF8A9900DBE126 /* Ogra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFF261AF1B66432500C5552D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF261F11B66459000C5552D /* Argo.framework in Frameworks */,
+				5559D7A21BFF8CF200DBE126 /* Argo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,20 +169,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF261F31B66459F00C5552D /* Argo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFF261D81B66435100C5552D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5559D7A11BFF8CE300DBE126 /* Argo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5559D7A51BFF8D1F00DBE126 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				5559D7A31BFF8D1B00DBE126 /* Argo.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		5559D7A81BFF8D4600DBE126 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				5559D7A61BFF8D4200DBE126 /* Argo.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
 		BFF261A91B66432500C5552D = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +200,6 @@
 				BFF261B51B66432500C5552D /* Ogra */,
 				BFF261C11B66432500C5552D /* OgraTests */,
 				BFF261ED1B66453600C5552D /* Frameworks */,
-				BFF261DF1B66435100C5552D /* OgraTests */,
 				BFF261B41B66432500C5552D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,7 +209,11 @@
 			children = (
 				BFF261B31B66432500C5552D /* Ogra.framework */,
 				BFF261D21B66435100C5552D /* Ogra.framework */,
-				BFF261DB1B66435100C5552D /* OgraTests.xctest */,
+				5559D7361BFF893A00DBE126 /* Ogra.framework */,
+				5559D7431BFF894B00DBE126 /* Ogra.framework */,
+				5559D7621BFF8A4A00DBE126 /* OgraTests-tvOS.xctest */,
+				5559D7711BFF8A7200DBE126 /* OgraTests-iOS.xctest */,
+				5559D7801BFF8A9900DBE126 /* OgraTests-Mac.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,18 +237,11 @@
 			path = OgraTests;
 			sourceTree = "<group>";
 		};
-		BFF261DF1B66435100C5552D /* OgraTests */ = {
-			isa = PBXGroup;
-			children = (
-				BFF261E01B66435100C5552D /* OgraTests.swift */,
-				BFF261E21B66435100C5552D /* Info.plist */,
-			);
-			path = OgraTests;
-			sourceTree = "<group>";
-		};
 		BFF261ED1B66453600C5552D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5559D7A81BFF8D4600DBE126 /* watchOS */,
+				5559D7A51BFF8D1F00DBE126 /* tvOS */,
 				BFF261EE1B66457900C5552D /* iOS */,
 				BFF261EF1B66457E00C5552D /* Mac */,
 			);
@@ -157,7 +251,7 @@
 		BFF261EE1B66457900C5552D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BFF261F01B66459000C5552D /* Argo.framework */,
+				5559D79E1BFF8C8700DBE126 /* Argo.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -165,7 +259,7 @@
 		BFF261EF1B66457E00C5552D /* Mac */ = {
 			isa = PBXGroup;
 			children = (
-				BFF261F21B66459F00C5552D /* Argo.framework */,
+				5559D79A1BFF8C3B00DBE126 /* Argo.framework */,
 			);
 			name = Mac;
 			sourceTree = "<group>";
@@ -182,6 +276,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5559D7331BFF893A00DBE126 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D75B1BFF897100DBE126 /* Ogra.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D7401BFF894B00DBE126 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D75D1BFF897C00DBE126 /* Ogra.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFF261B01B66432500C5552D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,12 +304,106 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5559D7981BFF8BE900DBE126 /* Ogra.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5559D7351BFF893A00DBE126 /* Ogra-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5559D73B1BFF893A00DBE126 /* Build configuration list for PBXNativeTarget "Ogra-watchOS" */;
+			buildPhases = (
+				5559D7311BFF893A00DBE126 /* Sources */,
+				5559D7321BFF893A00DBE126 /* Frameworks */,
+				5559D7331BFF893A00DBE126 /* Headers */,
+				5559D7341BFF893A00DBE126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ogra-watchOS";
+			productName = "Orgra-watchOS";
+			productReference = 5559D7361BFF893A00DBE126 /* Ogra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5559D7421BFF894B00DBE126 /* Ogra-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5559D7541BFF894C00DBE126 /* Build configuration list for PBXNativeTarget "Ogra-tvOS" */;
+			buildPhases = (
+				5559D73E1BFF894B00DBE126 /* Sources */,
+				5559D73F1BFF894B00DBE126 /* Frameworks */,
+				5559D7401BFF894B00DBE126 /* Headers */,
+				5559D7411BFF894B00DBE126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ogra-tvOS";
+			productName = "Orga-tvOS";
+			productReference = 5559D7431BFF894B00DBE126 /* Ogra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5559D7611BFF8A4A00DBE126 /* OgraTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5559D76A1BFF8A4A00DBE126 /* Build configuration list for PBXNativeTarget "OgraTests-tvOS" */;
+			buildPhases = (
+				5559D75E1BFF8A4A00DBE126 /* Sources */,
+				5559D75F1BFF8A4A00DBE126 /* Frameworks */,
+				5559D7601BFF8A4A00DBE126 /* Resources */,
+				5559D7AA1BFF8D8300DBE126 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5559D7691BFF8A4A00DBE126 /* PBXTargetDependency */,
+			);
+			name = "OgraTests-tvOS";
+			productName = "OrgaTests-tvOS";
+			productReference = 5559D7621BFF8A4A00DBE126 /* OgraTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5559D7701BFF8A7200DBE126 /* OgraTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5559D7791BFF8A7200DBE126 /* Build configuration list for PBXNativeTarget "OgraTests-iOS" */;
+			buildPhases = (
+				5559D76D1BFF8A7200DBE126 /* Sources */,
+				5559D76E1BFF8A7200DBE126 /* Frameworks */,
+				5559D76F1BFF8A7200DBE126 /* Resources */,
+				5559D7951BFF8B6400DBE126 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5559D7781BFF8A7200DBE126 /* PBXTargetDependency */,
+			);
+			name = "OgraTests-iOS";
+			productName = OgraTests;
+			productReference = 5559D7711BFF8A7200DBE126 /* OgraTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5559D77F1BFF8A9900DBE126 /* OgraTests-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5559D7881BFF8A9900DBE126 /* Build configuration list for PBXNativeTarget "OgraTests-Mac" */;
+			buildPhases = (
+				5559D77C1BFF8A9900DBE126 /* Sources */,
+				5559D77D1BFF8A9900DBE126 /* Frameworks */,
+				5559D77E1BFF8A9900DBE126 /* Resources */,
+				5559D7921BFF8B1400DBE126 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5559D7871BFF8A9900DBE126 /* PBXTargetDependency */,
+			);
+			name = "OgraTests-Mac";
+			productName = "OgraTests-Mac";
+			productReference = 5559D7801BFF8A9900DBE126 /* OgraTests-Mac.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BFF261B21B66432500C5552D /* Ogra-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFF261C71B66432500C5552D /* Build configuration list for PBXNativeTarget "Ogra-iOS" */;
@@ -226,7 +430,6 @@
 				BFF261CE1B66435100C5552D /* Frameworks */,
 				BFF261CF1B66435100C5552D /* Headers */,
 				BFF261D01B66435100C5552D /* Resources */,
-				BFFBEDA41B66EF3E004DCB22 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -237,42 +440,35 @@
 			productReference = BFF261D21B66435100C5552D /* Ogra.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BFF261DA1B66435100C5552D /* OgraTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFF261E61B66435100C5552D /* Build configuration list for PBXNativeTarget "OgraTests" */;
-			buildPhases = (
-				BFF261D71B66435100C5552D /* Sources */,
-				BFF261D81B66435100C5552D /* Frameworks */,
-				BFF261D91B66435100C5552D /* Resources */,
-				BFFBEDA61B66F2CA004DCB22 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BFF261DE1B66435100C5552D /* PBXTargetDependency */,
-			);
-			name = OgraTests;
-			productName = OgraTests;
-			productReference = BFF261DB1B66435100C5552D /* OgraTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BFF261AA1B66432500C5552D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Craig Edwards";
 				TargetAttributes = {
+					5559D7351BFF893A00DBE126 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					5559D7421BFF894B00DBE126 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					5559D7611BFF8A4A00DBE126 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					5559D7701BFF8A7200DBE126 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					5559D77F1BFF8A9900DBE126 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 					BFF261B21B66432500C5552D = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					BFF261D11B66435100C5552D = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					BFF261DA1B66435100C5552D = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -290,13 +486,52 @@
 			projectRoot = "";
 			targets = (
 				BFF261D11B66435100C5552D /* Ogra-Mac */,
+				5559D77F1BFF8A9900DBE126 /* OgraTests-Mac */,
 				BFF261B21B66432500C5552D /* Ogra-iOS */,
-				BFF261DA1B66435100C5552D /* OgraTests */,
+				5559D7701BFF8A7200DBE126 /* OgraTests-iOS */,
+				5559D7421BFF894B00DBE126 /* Ogra-tvOS */,
+				5559D7611BFF8A4A00DBE126 /* OgraTests-tvOS */,
+				5559D7351BFF893A00DBE126 /* Ogra-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5559D7341BFF893A00DBE126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D7411BFF894B00DBE126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D7601BFF8A4A00DBE126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D76F1BFF8A7200DBE126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D77E1BFF8A9900DBE126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFF261B11B66432500C5552D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,16 +546,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFF261D91B66435100C5552D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5559D7311BFF893A00DBE126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D75A1BFF896B00DBE126 /* Encodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D73E1BFF894B00DBE126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D75C1BFF897800DBE126 /* Encodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D75E1BFF8A4A00DBE126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D7901BFF8AF700DBE126 /* OgraTests.swift in Sources */,
+				5559D78F1BFF8AF700DBE126 /* OgraModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D76D1BFF8A7200DBE126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D78E1BFF8AF600DBE126 /* OgraTests.swift in Sources */,
+				5559D78D1BFF8AF600DBE126 /* OgraModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5559D77C1BFF8A9900DBE126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5559D78C1BFF8AF600DBE126 /* OgraTests.swift in Sources */,
+				5559D78B1BFF8AF600DBE126 /* OgraModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFF261AE1B66432500C5552D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,26 +608,219 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFF261D71B66435100C5552D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFF261F81B66496F00C5552D /* OgraModel.swift in Sources */,
-				BFF261E11B66435100C5552D /* OgraTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BFF261DE1B66435100C5552D /* PBXTargetDependency */ = {
+		5559D7691BFF8A4A00DBE126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5559D7421BFF894B00DBE126 /* Ogra-tvOS */;
+			targetProxy = 5559D7681BFF8A4A00DBE126 /* PBXContainerItemProxy */;
+		};
+		5559D7781BFF8A7200DBE126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFF261B21B66432500C5552D /* Ogra-iOS */;
+			targetProxy = 5559D7771BFF8A7200DBE126 /* PBXContainerItemProxy */;
+		};
+		5559D7871BFF8A9900DBE126 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BFF261D11B66435100C5552D /* Ogra-Mac */;
-			targetProxy = BFF261DD1B66435100C5552D /* PBXContainerItemProxy */;
+			targetProxy = 5559D7861BFF8A9900DBE126 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		5559D73C1BFF893A00DBE126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = Ogra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
+				PRODUCT_NAME = Ogra;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		5559D73D1BFF893A00DBE126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = Ogra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
+				PRODUCT_NAME = Ogra;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		5559D7551BFF894C00DBE126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Ogra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
+				PRODUCT_NAME = Ogra;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		5559D7561BFF894C00DBE126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Ogra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
+				PRODUCT_NAME = Ogra;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		5559D76B1BFF8A4A00DBE126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = OgraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.OgraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		5559D76C1BFF8A4A00DBE126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = OgraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.OgraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		5559D77A1BFF8A7200DBE126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OgraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5559D77B1BFF8A7200DBE126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OgraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5559D7891BFF8A9900DBE126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = OgraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5559D78A1BFF8A9900DBE126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = OgraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		BFF261C51B66432500C5552D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -509,7 +973,7 @@
 				INFOPLIST_FILE = Ogra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
 				PRODUCT_NAME = Ogra;
 				SDKROOT = macosx;
@@ -536,7 +1000,7 @@
 				INFOPLIST_FILE = Ogra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
 				PRODUCT_NAME = Ogra;
 				SDKROOT = macosx;
@@ -544,43 +1008,49 @@
 			};
 			name = Release;
 		};
-		BFF261E71B66435100C5552D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = OgraTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.OgraTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		BFF261E81B66435100C5552D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = OgraTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.OgraTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5559D73B1BFF893A00DBE126 /* Build configuration list for PBXNativeTarget "Ogra-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5559D73C1BFF893A00DBE126 /* Debug */,
+				5559D73D1BFF893A00DBE126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5559D7541BFF894C00DBE126 /* Build configuration list for PBXNativeTarget "Ogra-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5559D7551BFF894C00DBE126 /* Debug */,
+				5559D7561BFF894C00DBE126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5559D76A1BFF8A4A00DBE126 /* Build configuration list for PBXNativeTarget "OgraTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5559D76B1BFF8A4A00DBE126 /* Debug */,
+				5559D76C1BFF8A4A00DBE126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5559D7791BFF8A7200DBE126 /* Build configuration list for PBXNativeTarget "OgraTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5559D77A1BFF8A7200DBE126 /* Debug */,
+				5559D77B1BFF8A7200DBE126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5559D7881BFF8A9900DBE126 /* Build configuration list for PBXNativeTarget "OgraTests-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5559D7891BFF8A9900DBE126 /* Debug */,
+				5559D78A1BFF8A9900DBE126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BFF261AD1B66432500C5552D /* Build configuration list for PBXProject "Ogra" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -604,15 +1074,6 @@
 			buildConfigurations = (
 				BFF261E41B66435100C5552D /* Debug */,
 				BFF261E51B66435100C5552D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFF261E61B66435100C5552D /* Build configuration list for PBXNativeTarget "OgraTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFF261E71B66435100C5552D /* Debug */,
-				BFF261E81B66435100C5552D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
