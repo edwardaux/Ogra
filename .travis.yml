@@ -8,5 +8,10 @@ env:
 cache:
   - bundler
 
+before_install:
+  - brew update
+  - brew install carthage
+  - carthage bootstrap
+  
 script:
   - rake test
