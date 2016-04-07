@@ -14,11 +14,11 @@ class OgraTests: XCTestCase {
 	private func toJSON(jsonString: String) -> JSON {
 		let jsonData = jsonString.dataUsingEncoding(NSUTF8StringEncoding)!
 		let jsonObject: AnyObject = try! NSJSONSerialization.JSONObjectWithData(jsonData, options:NSJSONReadingOptions())
-		return JSON.parse(jsonObject)
+		return JSON(jsonObject)
 	}
 
 	func testNullPet() {
-		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":null, \"nicknames\":[\"Johnny\"], \"accounts\":{\"gmail\":\"john\"} }")
+		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":null, \"nicknames\":[\"Johnny\"], \"accounts\":{\"gmail\":\"john\"}, \"happy\":true }")
 		let user = User.decode(jsonIn).value!
 		let jsonOut = user.encode()
 
@@ -26,7 +26,7 @@ class OgraTests: XCTestCase {
 	}
 
 	func testNullNicknames() {
-		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":null, \"nicknames\":null, \"accounts\":{\"gmail\":\"john\"} }")
+		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":null, \"nicknames\":null, \"accounts\":{\"gmail\":\"john\"}, \"happy\":true }")
 		let user = User.decode(jsonIn).value!
 		let jsonOut = user.encode()
 
@@ -34,7 +34,7 @@ class OgraTests: XCTestCase {
 	}
 
 	func testNullAccounts() {
-		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":null, \"nicknames\":[\"Johnny\"], \"accounts\":null }")
+		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":null, \"nicknames\":[\"Johnny\"], \"accounts\":null, \"happy\":true }")
 		let user = User.decode(jsonIn).value!
 		let jsonOut = user.encode()
 
@@ -42,7 +42,7 @@ class OgraTests: XCTestCase {
 	}
 
 	func testWithPet() {
-		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":{\"name\":\"Rex\"}, \"nicknames\":[\"Johnny\"], \"accounts\":{\"gmail\":\"john\"} }")
+		let jsonIn = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":{\"name\":\"Rex\"}, \"nicknames\":[\"Johnny\"], \"accounts\":{\"gmail\":\"john\"}, \"happy\":true }")
 		let user = User.decode(jsonIn).value!
 		let jsonOut = user.encode()
 
@@ -50,7 +50,7 @@ class OgraTests: XCTestCase {
 	}
 
 	func testPassingToJSONSerialization() {
-		let json = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":{\"name\":\"Rex\"}, \"nicknames\":[\"Johnny\"], \"accounts\":{\"gmail\":\"john\"} }")
+		let json = toJSON("{ \"id\":123, \"name\":\"John\", \"email\":\"john@gmail.com\", \"pet\":{\"name\":\"Rex\"}, \"nicknames\":[\"Johnny\"], \"accounts\":{\"gmail\":\"john\"}, \"happy\":true }")
 		let user = User.decode(json).value!
 
 		let jsonObject = user.encode().JSONObject()
@@ -108,8 +108,8 @@ class OgraTests: XCTestCase {
     func testTypesEncodeProperly() {
         XCTAssertEqual(JSON.Null.encode(), JSON.Null)
         XCTAssertEqual("42".encode(), JSON.String("42"))
-        XCTAssertEqual(true.encode(), JSON.Number(NSNumber(bool: true)))
-        XCTAssertEqual(false.encode(), JSON.Number(NSNumber(bool: false)))
+        XCTAssertEqual(true.encode(), JSON.Bool(true))
+        XCTAssertEqual(false.encode(), JSON.Bool(false))
         XCTAssertEqual(Int(42).encode(), JSON.Number(NSNumber(integer: 42)))
         XCTAssertEqual(Double(42.42).encode(), JSON.Number(NSNumber(double: 42.42)))
         XCTAssertEqual(Float(42.42).encode(), JSON.Number(NSNumber(float: 42.42)))
