@@ -27,7 +27,7 @@ extension String: Encodable {
 
 extension Bool: Encodable {
 	public func encode() -> JSON {
-		return .Number(self)
+		return .Bool(self)
 	}
 }
 
@@ -129,6 +129,7 @@ extension JSON {
 		case .String(let value): return value
 		case .Number(let value): return value
 		case .Array(let array):  return array.map { $0.JSONObject() }
+		case .Bool(let value):   return value
 		case .Object(let object):
 			var dict: [Swift.String : AnyObject] = [:]
 			for (key, value) in object {

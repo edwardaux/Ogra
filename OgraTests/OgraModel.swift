@@ -18,6 +18,7 @@ struct User {
 	let pet: Pet?
 	let nicknames: [String]?
 	let accounts: [String:String]?
+	let happy: Bool
 }
 struct Pet {
 	let name: String
@@ -56,8 +57,8 @@ enum UIntDialingCode: UInt {
 
 // MARK: - JSON Encoding and Decoding
 extension User: Decodable, Encodable {
-	static func create(id: Int)(name: String)(email: String?)(pet: Pet?)(nicknames: [String]?)(accounts: [String:String]?) -> User {
-		return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames, accounts:accounts)
+	static func create(id: Int)(name: String)(email: String?)(pet: Pet?)(nicknames: [String]?)(accounts: [String:String]?)(happy: Bool) -> User {
+		return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames, accounts:accounts, happy:happy)
 	}
 
 	static func decode(j: JSON) -> Decoded<User> {
@@ -68,6 +69,7 @@ extension User: Decodable, Encodable {
 			<*> j <|?  "pet"
 			<*> j <||? "nicknames"
 			<*> .optional(flatReduce(["accounts"], initial: j, combine: decodedJSON) >>- Dictionary<String, String>.decode)
+			<*> j <|   "happy"
 	}
 	
 	func encode() -> JSON {
@@ -77,7 +79,8 @@ extension User: Decodable, Encodable {
 			"email"     : self.email.encode(),
 			"pet"       : self.pet.encode(),
 			"nicknames" : self.nicknames.encode(),
-			"accounts"  : self.accounts.encode()
+			"accounts"  : self.accounts.encode(),
+			"happy"     : self.happy.encode()
 		])
 	}
 }
