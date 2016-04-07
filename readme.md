@@ -33,5 +33,14 @@ github "edwardaux/Ogra"
 
 Then run `carthage update`.
 
+## Extending Ogra
+Additions and enhancements are most welcome. I'd suggest the following steps:
+
+* Create a fork of the project and clone to your local machine
+* Run the following command: `carthage update --use-submodules`
+* Make your changes
+* Add test cases and make sure they all pass
+* Create a pull request to merge your changes
+
 ## Licence
 Ogra is Copyright(c) 2015 Craig Edwards. It may be redistributed under the terms specified by the [MIT licence](licence.md).
