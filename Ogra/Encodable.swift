@@ -55,6 +55,12 @@ extension UInt: Encodable {
 	}
 }
 
+extension UInt64: Encodable {
+	public func encode() -> JSON {
+		return .Number(NSNumber(unsignedLongLong: self))
+	}
+}
+
 extension Optional where Wrapped: Encodable {
 	public func encode() -> JSON {
 		switch self {
@@ -119,6 +125,12 @@ extension Encodable where Self: RawRepresentable, Self.RawValue == Float {
 extension Encodable where Self: RawRepresentable, Self.RawValue == UInt {
     public func encode() -> JSON {
         return .Number(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == UInt64 {
+    public func encode() -> JSON {
+        return .Number(NSNumber(unsignedLongLong: self.rawValue))
     }
 }
 

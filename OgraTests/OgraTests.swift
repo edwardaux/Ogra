@@ -97,6 +97,13 @@ class OgraTests: XCTestCase {
 		XCTAssertEqual(json, encoded)
 	}
 	
+	func testRawRepresentableUInt64Type() {
+		let dialingCode: UInt64DialingCode = .UnitedStates
+		let json: JSON = .Number(NSNumber(unsignedLongLong: dialingCode.rawValue))
+		let encoded = dialingCode.encode()
+		XCTAssertEqual(json, encoded)
+	}
+	
 	func testConversionToAnyObject() {
 		XCTAssertEqual(JSON.Null.JSONObject() as? NSNull, NSNull())
 		XCTAssertEqual(JSON.String("42").JSONObject() as? String, "42")
@@ -114,6 +121,7 @@ class OgraTests: XCTestCase {
 		XCTAssertEqual(Double(42.42).encode(), JSON.Number(NSNumber(double: 42.42)))
 		XCTAssertEqual(Float(42.42).encode(), JSON.Number(NSNumber(float: 42.42)))
 		XCTAssertEqual(UInt(42).encode(), JSON.Number(NSNumber(unsignedLong: 42)))
+		XCTAssertEqual(UInt64(42).encode(), JSON.Number(NSNumber(unsignedLongLong: 42)))
 		XCTAssertEqual(("42" as String?).encode(), JSON.String("42"))
 		XCTAssertEqual((nil as String?).encode(), JSON.Null)
 	}

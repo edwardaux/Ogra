@@ -54,6 +54,10 @@ enum UIntDialingCode: UInt {
     case UnitedStates = 1
 }
 
+enum UInt64DialingCode: UInt64 {
+    case UnitedKingdom = 44
+    case UnitedStates = 1
+}
 
 // MARK: - JSON Encoding and Decoding
 extension User: Decodable, Encodable {
@@ -108,3 +112,4 @@ extension IntDialingCode: Decodable, Encodable {}
 extension DoubleDialingCode: Encodable {}
 extension FloatDialingCode: Encodable {}
 extension UIntDialingCode: Encodable {}
+extension UInt64DialingCode: Encodable {}
