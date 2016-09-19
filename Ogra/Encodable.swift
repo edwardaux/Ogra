@@ -21,133 +21,133 @@ extension JSON: Encodable {
 
 extension String: Encodable {
 	public func encode() -> JSON {
-		return .String(self)
+		return .string(self)
 	}
 }
 
 extension Bool: Encodable {
 	public func encode() -> JSON {
-		return .Bool(self)
+		return .bool(self)
 	}
 }
 
 extension Int: Encodable {
 	public func encode() -> JSON {
-		return .Number(self)
+		return .number(self as NSNumber)
 	}
 }
 
 extension Double: Encodable {
 	public func encode() -> JSON {
-		return .Number(self)
+		return .number(self as NSNumber)
 	}
 }
 
 extension Float: Encodable {
 	public func encode() -> JSON {
-		return .Number(self)
+		return .number(self as NSNumber)
 	}
 }
 
 extension UInt: Encodable {
 	public func encode() -> JSON {
-		return .Number(self)
+		return .number(self as NSNumber)
 	}
 }
 
 extension UInt64: Encodable {
 	public func encode() -> JSON {
-		return .Number(NSNumber(unsignedLongLong: self))
+		return .number(NSNumber(value: self))
 	}
 }
 
 extension Optional where Wrapped: Encodable {
 	public func encode() -> JSON {
 		switch self {
-		case .None:        return .Null
-		case .Some(let v): return v.encode()
+		case .none:        return .null
+		case .some(let v): return v.encode()
 		}
 	}
 }
 
-extension CollectionType where Self: DictionaryLiteralConvertible, Self.Key: StringLiteralConvertible, Self.Value: Encodable, Generator.Element == (Self.Key, Self.Value) {
+extension Collection where Self: ExpressibleByDictionaryLiteral, Self.Key: ExpressibleByStringLiteral, Self.Value: Encodable, Iterator.Element == (Self.Key, Self.Value) {
 	public func encode() -> JSON {
 		var values = [String : JSON]()
 		for (key, value) in self {
-			values[String(key)] = value.encode()
+			values[String(describing: key)] = value.encode()
 		}
-		return .Object(values)
+		return .object(values)
 	}
 }
 
-extension Optional where Wrapped: protocol<CollectionType, DictionaryLiteralConvertible>, Wrapped.Key: StringLiteralConvertible, Wrapped.Value: Encodable, Wrapped.Generator.Element == (Wrapped.Key, Wrapped.Value) {
+extension Optional where Wrapped: Collection & ExpressibleByDictionaryLiteral, Wrapped.Key: ExpressibleByStringLiteral, Wrapped.Value: Encodable, Wrapped.Iterator.Element == (Wrapped.Key, Wrapped.Value) {
 	public func encode() -> JSON {
-		return self.map { $0.encode() } ?? .Null
+		return self.map { $0.encode() } ?? .null
 	}
 }
 
-extension CollectionType where Generator.Element: Encodable {
+extension Collection where Iterator.Element: Encodable {
 	public func encode() -> JSON {
-		return JSON.Array(self.map { $0.encode() })
+		return JSON.array(self.map { $0.encode() })
 	}
 }
 
-extension Optional where Wrapped: CollectionType, Wrapped.Generator.Element: Encodable {
+extension Optional where Wrapped: Collection, Wrapped.Iterator.Element: Encodable {
 	public func encode() -> JSON {
-		return self.map { $0.encode() } ?? .Null
+		return self.map { $0.encode() } ?? .null
 	}
 }
 
 extension Encodable where Self: RawRepresentable, Self.RawValue == String {
     public func encode() -> JSON {
-        return .String(self.rawValue)
+        return .string(self.rawValue)
     }
 }
 
 extension Encodable where Self: RawRepresentable, Self.RawValue == Int {
     public func encode() -> JSON {
-        return .Number(self.rawValue)
+        return .number(self.rawValue as NSNumber)
     }
 }
 
 extension Encodable where Self: RawRepresentable, Self.RawValue == Double {
     public func encode() -> JSON {
-        return .Number(self.rawValue)
+        return .number(self.rawValue as NSNumber)
     }
 }
 
 extension Encodable where Self: RawRepresentable, Self.RawValue == Float {
     public func encode() -> JSON {
-        return .Number(self.rawValue)
+        return .number(self.rawValue as NSNumber)
     }
 }
 
 extension Encodable where Self: RawRepresentable, Self.RawValue == UInt {
     public func encode() -> JSON {
-        return .Number(self.rawValue)
+        return .number(self.rawValue as NSNumber)
     }
 }
 
 extension Encodable where Self: RawRepresentable, Self.RawValue == UInt64 {
     public func encode() -> JSON {
-        return .Number(NSNumber(unsignedLongLong: self.rawValue))
+        return .number(NSNumber(value: self.rawValue))
     }
 }
 
 extension JSON {
-	public func JSONObject() -> AnyObject {
+	public func JSONObject() -> Any {
 		switch self {
-		case .Null:              return NSNull()
-		case .String(let value): return value
-		case .Number(let value): return value
-		case .Array(let array):  return array.map { $0.JSONObject() }
-		case .Bool(let value):   return value
-		case .Object(let object):
-			var dict: [Swift.String : AnyObject] = [:]
+		case .null:              return NSNull()
+		case .string(let value): return value
+		case .number(let value): return value
+		case .array(let array):  return array.map { $0.JSONObject() }
+		case .bool(let value):   return value
+		case .object(let object):
+			var dict: [Swift.String : Any] = [:]
 			for (key, value) in object {
                 dict[key] = value.JSONObject()
 			}
-			return dict
+			return dict as Any
 		}
 	}
 }
