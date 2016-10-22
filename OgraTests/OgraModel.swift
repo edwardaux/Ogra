@@ -9,6 +9,7 @@
 import Foundation
 import Argo
 import Ogra
+import Runes
 
 // MARK: - Basic data model
 struct User {
@@ -35,37 +36,37 @@ enum Continent: String {
 }
 
 enum IntDialingCode: Int {
-    case UnitedKingdom = 44
-    case UnitedStates = 1
+    case unitedKingdom = 44
+    case unitedStates = 1
 }
 
 enum DoubleDialingCode: Double {
-    case UnitedKingdom = 44
-    case UnitedStates = 1
+    case unitedKingdom = 44
+    case unitedStates = 1
 }
 
 enum FloatDialingCode: Float {
-    case UnitedKingdom = 44
-    case UnitedStates = 1
+    case unitedKingdom = 44
+    case unitedStates = 1
 }
 
 enum UIntDialingCode: UInt {
-    case UnitedKingdom = 44
-    case UnitedStates = 1
+    case unitedKingdom = 44
+    case unitedStates = 1
 }
 
 enum UInt64DialingCode: UInt64 {
-    case UnitedKingdom = 44
-    case UnitedStates = 1
+    case unitedKingdom = 44
+    case unitedStates = 1
 }
 
 // MARK: - JSON Encoding and Decoding
 extension User: Decodable, Encodable {
-	static func create(id: Int)(name: String)(email: String?)(pet: Pet?)(nicknames: [String]?)(accounts: [String:String]?)(happy: Bool) -> User {
+	static func create(_ id: Int, _ name: String, _ email: String?, _ pet: Pet?, _ nicknames: [String]?, _ accounts: [String:String]?, _ happy: Bool) -> User {
 		return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames, accounts:accounts, happy:happy)
 	}
 
-	static func decode(j: JSON) -> Decoded<User> {
+	static func decode(_ j: JSON) -> Decoded<User> {
 		return create
 			<^> j <|   "id"
 			<*> j <|   "name"
@@ -77,7 +78,7 @@ extension User: Decodable, Encodable {
 	}
 	
 	func encode() -> JSON {
-		return JSON.Object([
+		return JSON.object([
 			"id"        : self.id.encode(),
 			"name"      : self.name.encode(),
 			"email"     : self.email.encode(),
@@ -90,17 +91,17 @@ extension User: Decodable, Encodable {
 }
 
 extension Pet: Decodable, Encodable {
-	static func create(name: String) -> Pet {
+	static func create(_ name: String) -> Pet {
 		return Pet(name:name)
 	}
 	
-	static func decode(j: JSON) -> Decoded<Pet> {
+	static func decode(_ j: JSON) -> Decoded<Pet> {
 		return create
 			<^> j <| "name"
 	}
 	
 	func encode() -> JSON {
-		return JSON.Object([
+		return JSON.object([
 			"name" : self.name.encode(),
 		])
 	}

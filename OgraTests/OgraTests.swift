@@ -11,9 +11,9 @@ import Argo
 import Ogra
 
 class OgraTests: XCTestCase {
-	private func toJSON(jsonString: String) -> JSON {
-		let jsonData = jsonString.dataUsingEncoding(NSUTF8StringEncoding)!
-		let jsonObject: AnyObject = try! NSJSONSerialization.JSONObjectWithData(jsonData, options:NSJSONReadingOptions())
+	fileprivate func toJSON(_ jsonString: String) -> JSON {
+		let jsonData = jsonString.data(using: String.Encoding.utf8)!
+		let jsonObject: AnyObject = try! JSONSerialization.jsonObject(with: jsonData, options:JSONSerialization.ReadingOptions()) as AnyObject
 		return JSON(jsonObject)
 	}
 
@@ -54,8 +54,8 @@ class OgraTests: XCTestCase {
 		let user = User.decode(json).value!
 
 		let jsonObject = user.encode().JSONObject()
-		let data = try! NSJSONSerialization.dataWithJSONObject(jsonObject, options: NSJSONWritingOptions.PrettyPrinted)
-		let string = NSString(data:data, encoding:NSUTF8StringEncoding)!
+		let data = try! JSONSerialization.data(withJSONObject: jsonObject, options: JSONSerialization.WritingOptions.prettyPrinted)
+		let string = NSString(data:data, encoding:String.Encoding.utf8.rawValue)!
 		// a bit tricky to test this because changes to Foundation will result in different ordering of the output.
 		// for now, we just dump it out. if there were problems converting to JSON (eg. dataWithJSONObject returning
 		// a nil) then we would have trapped by now
@@ -64,65 +64,65 @@ class OgraTests: XCTestCase {
 
 	func testRawRepresentableStringType() {
 		let continent: Continent = .NorthAmerica
-		let json: JSON = .String(continent.rawValue)
+		let json: JSON = .string(continent.rawValue)
 		let encoded = continent.encode()
 		XCTAssertEqual(json, encoded)
 	}
 	
 	func testRawRepresentableIntType() {
-		let dialingCode: IntDialingCode = .UnitedStates
-		let json: JSON = .Number(dialingCode.rawValue)
+		let dialingCode: IntDialingCode = .unitedStates
+		let json: JSON = .number(dialingCode.rawValue as NSNumber)
 		let encoded = dialingCode.encode()
 		XCTAssertEqual(json, encoded)
 	}
 	
 	func testRawRepresentableDoubleType() {
-		let dialingCode: DoubleDialingCode = .UnitedStates
-		let json: JSON = .Number(dialingCode.rawValue)
+		let dialingCode: DoubleDialingCode = .unitedStates
+		let json: JSON = .number(dialingCode.rawValue as NSNumber)
 		let encoded = dialingCode.encode()
 		XCTAssertEqual(json, encoded)
 	}
 	
 	func testRawRepresentableFloatType() {
-		let dialingCode: FloatDialingCode = .UnitedStates
-		let json: JSON = .Number(dialingCode.rawValue)
+		let dialingCode: FloatDialingCode = .unitedStates
+		let json: JSON = .number(dialingCode.rawValue as NSNumber)
 		let encoded = dialingCode.encode()
 		XCTAssertEqual(json, encoded)
 	}
 	
 	func testRawRepresentableUIntType() {
-		let dialingCode: UIntDialingCode = .UnitedStates
-		let json: JSON = .Number(dialingCode.rawValue)
+		let dialingCode: UIntDialingCode = .unitedStates
+		let json: JSON = .number(dialingCode.rawValue as NSNumber)
 		let encoded = dialingCode.encode()
 		XCTAssertEqual(json, encoded)
 	}
 	
 	func testRawRepresentableUInt64Type() {
-		let dialingCode: UInt64DialingCode = .UnitedStates
-		let json: JSON = .Number(NSNumber(unsignedLongLong: dialingCode.rawValue))
+		let dialingCode: UInt64DialingCode = .unitedStates
+		let json: JSON = .number(NSNumber(value: dialingCode.rawValue))
 		let encoded = dialingCode.encode()
 		XCTAssertEqual(json, encoded)
 	}
 	
 	func testConversionToAnyObject() {
-		XCTAssertEqual(JSON.Null.JSONObject() as? NSNull, NSNull())
-		XCTAssertEqual(JSON.String("42").JSONObject() as? String, "42")
-		XCTAssertEqual(JSON.Number(NSNumber(integer: 42)).JSONObject() as? Int, 42)
-		XCTAssertEqual(JSON.Array([JSON.String("42")]).JSONObject() as! [String], ["42"])
-		XCTAssertEqual(JSON.Object(["life" : JSON.String("42")]).JSONObject() as! [String : String], ["life" : "42"])
+		XCTAssertEqual(JSON.null.JSONObject() as? NSNull, NSNull())
+		XCTAssertEqual(JSON.string("42").JSONObject() as? String, "42")
+		XCTAssertEqual(JSON.number(NSNumber(value: 42)).JSONObject() as? Int, 42)
+		XCTAssertEqual(JSON.array([JSON.string("42")]).JSONObject() as! [String], ["42"])
+		XCTAssertEqual(JSON.object(["life" : JSON.string("42")]).JSONObject() as! [String : String], ["life" : "42"])
 	}
 	
 	func testTypesEncodeProperly() {
-		XCTAssertEqual(JSON.Null.encode(), JSON.Null)
-		XCTAssertEqual("42".encode(), JSON.String("42"))
-		XCTAssertEqual(true.encode(), JSON.Bool(true))
-		XCTAssertEqual(false.encode(), JSON.Bool(false))
-		XCTAssertEqual(Int(42).encode(), JSON.Number(NSNumber(integer: 42)))
-		XCTAssertEqual(Double(42.42).encode(), JSON.Number(NSNumber(double: 42.42)))
-		XCTAssertEqual(Float(42.42).encode(), JSON.Number(NSNumber(float: 42.42)))
-		XCTAssertEqual(UInt(42).encode(), JSON.Number(NSNumber(unsignedLong: 42)))
-		XCTAssertEqual(UInt64(42).encode(), JSON.Number(NSNumber(unsignedLongLong: 42)))
-		XCTAssertEqual(("42" as String?).encode(), JSON.String("42"))
-		XCTAssertEqual((nil as String?).encode(), JSON.Null)
+		XCTAssertEqual(JSON.null.encode(), JSON.null)
+		XCTAssertEqual("42".encode(), JSON.string("42"))
+		XCTAssertEqual(true.encode(), JSON.bool(true))
+		XCTAssertEqual(false.encode(), JSON.bool(false))
+		XCTAssertEqual(Int(42).encode(), JSON.number(NSNumber(value: 42)))
+		XCTAssertEqual(Double(42.42).encode(), JSON.number(NSNumber(value: 42.42)))
+		XCTAssertEqual(Float(42.42).encode(), JSON.number(NSNumber(value: 42.42)))
+		XCTAssertEqual(UInt(42).encode(), JSON.number(NSNumber(value: 42)))
+		XCTAssertEqual(UInt64(42).encode(), JSON.number(NSNumber(value: 42)))
+		XCTAssertEqual(("42" as String?).encode(), JSON.string("42"))
+		XCTAssertEqual((nil as String?).encode(), JSON.null)
 	}
 }
