@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0710"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -26,15 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BFF261DA1B66435100C5552D"
-               BuildableName = "OgraTests.xctest"
-               BlueprintName = "OgraTests"
+               BlueprintIdentifier = "5559D77F1BFF8A9900DBE126"
+               BuildableName = "OgraTests-Mac.xctest"
+               BlueprintName = "OgraTests-Mac"
                ReferencedContainer = "container:Ogra.xcodeproj">
             </BuildableReference>
          </TestableReference>

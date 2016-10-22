@@ -1,1 +1,1 @@
-github "thoughtbot/Argo" "td-swift-2"
+github "thoughtbot/Argo" ~> 3.1

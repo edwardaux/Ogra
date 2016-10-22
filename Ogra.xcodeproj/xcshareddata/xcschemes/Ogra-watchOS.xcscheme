@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BFF261B21B66432500C5552D"
+               BlueprintIdentifier = "5559D7351BFF893A00DBE126"
                BuildableName = "Ogra.framework"
-               BlueprintName = "Ogra-iOS"
+               BlueprintName = "Ogra-watchOS"
                ReferencedContainer = "container:Ogra.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,26 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5559D7701BFF8A7200DBE126"
-               BuildableName = "OgraTests-iOS.xctest"
-               BlueprintName = "OgraTests-iOS"
-               ReferencedContainer = "container:Ogra.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFF261B21B66432500C5552D"
-            BuildableName = "Ogra.framework"
-            BlueprintName = "Ogra-iOS"
-            ReferencedContainer = "container:Ogra.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -65,9 +46,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFF261B21B66432500C5552D"
+            BlueprintIdentifier = "5559D7351BFF893A00DBE126"
             BuildableName = "Ogra.framework"
-            BlueprintName = "Ogra-iOS"
+            BlueprintName = "Ogra-watchOS"
             ReferencedContainer = "container:Ogra.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFF261B21B66432500C5552D"
+            BlueprintIdentifier = "5559D7351BFF893A00DBE126"
             BuildableName = "Ogra.framework"
-            BlueprintName = "Ogra-iOS"
+            BlueprintName = "Ogra-watchOS"
             ReferencedContainer = "container:Ogra.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -27,7 +27,7 @@ extension String: Encodable {
 
 extension Bool: Encodable {
 	public func encode() -> JSON {
-		return .Number(self ? 1 : 0)
+		return .Bool(self)
 	}
 }
 
@@ -52,6 +52,12 @@ extension Float: Encodable {
 extension UInt: Encodable {
 	public func encode() -> JSON {
 		return .Number(self)
+	}
+}
+
+extension UInt64: Encodable {
+	public func encode() -> JSON {
+		return .Number(NSNumber(unsignedLongLong: self))
 	}
 }
 
@@ -92,6 +98,42 @@ extension Optional where Wrapped: CollectionType, Wrapped.Generator.Element: Enc
 	}
 }
 
+extension Encodable where Self: RawRepresentable, Self.RawValue == String {
+    public func encode() -> JSON {
+        return .String(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == Int {
+    public func encode() -> JSON {
+        return .Number(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == Double {
+    public func encode() -> JSON {
+        return .Number(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == Float {
+    public func encode() -> JSON {
+        return .Number(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == UInt {
+    public func encode() -> JSON {
+        return .Number(self.rawValue)
+    }
+}
+
+extension Encodable where Self: RawRepresentable, Self.RawValue == UInt64 {
+    public func encode() -> JSON {
+        return .Number(NSNumber(unsignedLongLong: self.rawValue))
+    }
+}
+
 extension JSON {
 	public func JSONObject() -> AnyObject {
 		switch self {
@@ -99,14 +141,11 @@ extension JSON {
 		case .String(let value): return value
 		case .Number(let value): return value
 		case .Array(let array):  return array.map { $0.JSONObject() }
+		case .Bool(let value):   return value
 		case .Object(let object):
 			var dict: [Swift.String : AnyObject] = [:]
-			for key in object.keys {
-				if let value = object[key] {
-					dict[key] = value.JSONObject()
-				} else {
-					dict[key] = NSNull()
-				}
+			for (key, value) in object {
+                dict[key] = value.JSONObject()
 			}
 			return dict
 		}

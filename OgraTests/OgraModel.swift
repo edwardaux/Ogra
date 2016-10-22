@@ -18,15 +18,51 @@ struct User {
 	let pet: Pet?
 	let nicknames: [String]?
 	let accounts: [String:String]?
+	let happy: Bool
 }
 struct Pet {
 	let name: String
 }
 
+enum Continent: String {
+    case Asia
+    case Africa
+    case NorthAmerica = "North America"
+    case SouthAmerica = "South America"
+    case Antarctica
+    case Europe
+    case Australia
+}
+
+enum IntDialingCode: Int {
+    case UnitedKingdom = 44
+    case UnitedStates = 1
+}
+
+enum DoubleDialingCode: Double {
+    case UnitedKingdom = 44
+    case UnitedStates = 1
+}
+
+enum FloatDialingCode: Float {
+    case UnitedKingdom = 44
+    case UnitedStates = 1
+}
+
+enum UIntDialingCode: UInt {
+    case UnitedKingdom = 44
+    case UnitedStates = 1
+}
+
+enum UInt64DialingCode: UInt64 {
+    case UnitedKingdom = 44
+    case UnitedStates = 1
+}
+
 // MARK: - JSON Encoding and Decoding
 extension User: Decodable, Encodable {
-	static func create(id: Int)(name: String)(email: String?)(pet: Pet?)(nicknames: [String]?)(accounts: [String:String]?) -> User {
-		return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames, accounts:accounts)
+	static func create(id: Int)(name: String)(email: String?)(pet: Pet?)(nicknames: [String]?)(accounts: [String:String]?)(happy: Bool) -> User {
+		return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames, accounts:accounts, happy:happy)
 	}
 
 	static func decode(j: JSON) -> Decoded<User> {
@@ -37,6 +73,7 @@ extension User: Decodable, Encodable {
 			<*> j <|?  "pet"
 			<*> j <||? "nicknames"
 			<*> .optional(flatReduce(["accounts"], initial: j, combine: decodedJSON) >>- Dictionary<String, String>.decode)
+			<*> j <|   "happy"
 	}
 	
 	func encode() -> JSON {
@@ -46,7 +83,8 @@ extension User: Decodable, Encodable {
 			"email"     : self.email.encode(),
 			"pet"       : self.pet.encode(),
 			"nicknames" : self.nicknames.encode(),
-			"accounts"  : self.accounts.encode()
+			"accounts"  : self.accounts.encode(),
+			"happy"     : self.happy.encode()
 		])
 	}
 }
@@ -67,3 +105,11 @@ extension Pet: Decodable, Encodable {
 		])
 	}
 }
+
+extension Continent: Decodable, Encodable {}
+
+extension IntDialingCode: Decodable, Encodable {}
+extension DoubleDialingCode: Encodable {}
+extension FloatDialingCode: Encodable {}
+extension UIntDialingCode: Encodable {}
+extension UInt64DialingCode: Encodable {}
