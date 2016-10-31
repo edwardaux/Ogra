@@ -30,6 +30,13 @@
 		5559D7A71BFF8D4200DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D7A61BFF8D4200DBE126 /* Argo.framework */; };
 		5559D7A91BFF8D7E00DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D7A31BFF8D1B00DBE126 /* Argo.framework */; };
 		5559D7AB1BFF8D8B00DBE126 /* Argo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5559D7A31BFF8D1B00DBE126 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFA9292C1DC720C70064AE02 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D79A1BFF8C3B00DBE126 /* Argo.framework */; };
+		BFA9292E1DC720C70064AE02 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA9292D1DC720C70064AE02 /* Runes.framework */; };
+		BFA9292F1DC720E90064AE02 /* Runes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFA9292D1DC720C70064AE02 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFA929311DC721310064AE02 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA929301DC721310064AE02 /* Runes.framework */; };
+		BFA929321DC721390064AE02 /* Runes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFA929301DC721310064AE02 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFA929351DC721630064AE02 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA929341DC721630064AE02 /* Runes.framework */; };
+		BFA929361DC721690064AE02 /* Runes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFA929341DC721630064AE02 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFF261B71B66432500C5552D /* Ogra.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF261B61B66432500C5552D /* Ogra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFF261EA1B6643A000C5552D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
 		BFF261EB1B6643A000C5552D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
@@ -66,6 +73,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BFA9292F1DC720E90064AE02 /* Runes.framework in CopyFiles */,
 				5559D79B1BFF8C3B00DBE126 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +84,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BFA929321DC721390064AE02 /* Runes.framework in CopyFiles */,
 				5559D79F1BFF8C8700DBE126 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +95,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BFA929361DC721690064AE02 /* Runes.framework in CopyFiles */,
 				5559D7AB1BFF8D8B00DBE126 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +112,9 @@
 		5559D79E1BFF8C8700DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
 		5559D7A31BFF8D1B00DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/tvOS/Argo.framework; sourceTree = "<group>"; };
 		5559D7A61BFF8D4200DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/watchOS/Argo.framework; sourceTree = "<group>"; };
+		BFA9292D1DC720C70064AE02 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/Mac/Runes.framework; sourceTree = "<group>"; };
+		BFA929301DC721310064AE02 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
+		BFA929341DC721630064AE02 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/tvOS/Runes.framework; sourceTree = "<group>"; };
 		BFCCEBBF1B684613000BDFB5 /* licence.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = licence.md; sourceTree = "<group>"; };
 		BFF261B31B66432500C5552D /* Ogra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ogra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF261B61B66432500C5552D /* Ogra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ogra.h; sourceTree = "<group>"; };
@@ -135,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA929351DC721630064AE02 /* Runes.framework in Frameworks */,
 				5559D7A91BFF8D7E00DBE126 /* Argo.framework in Frameworks */,
 				5559D7671BFF8A4A00DBE126 /* Ogra.framework in Frameworks */,
 			);
@@ -144,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA929311DC721310064AE02 /* Runes.framework in Frameworks */,
 				5559D7A01BFF8CAB00DBE126 /* Argo.framework in Frameworks */,
 				5559D7761BFF8A7200DBE126 /* Ogra.framework in Frameworks */,
 			);
@@ -153,6 +168,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA9292E1DC720C70064AE02 /* Runes.framework in Frameworks */,
+				BFA9292C1DC720C70064AE02 /* Argo.framework in Frameworks */,
 				5559D7851BFF8A9900DBE126 /* Ogra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +257,9 @@
 		BFF261ED1B66453600C5552D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFA929341DC721630064AE02 /* Runes.framework */,
+				BFA929301DC721310064AE02 /* Runes.framework */,
+				BFA9292D1DC720C70064AE02 /* Runes.framework */,
 				5559D7A81BFF8D4600DBE126 /* watchOS */,
 				5559D7A51BFF8D1F00DBE126 /* tvOS */,
 				BFF261EE1B66457900C5552D /* iOS */,
@@ -447,7 +467,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Craig Edwards";
 				TargetAttributes = {
 					5559D7351BFF893A00DBE126 = {
@@ -461,12 +481,14 @@
 					};
 					5559D7701BFF8A7200DBE126 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 					};
 					5559D77F1BFF8A9900DBE126 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 					BFF261B21B66432500C5552D = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					BFF261D11B66435100C5552D = {
 						CreatedOnToolsVersion = 7.0;
@@ -766,6 +788,7 @@
 		5559D77A1BFF8A7200DBE126 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGNING_REQUIRED = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -775,12 +798,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5559D77B1BFF8A7200DBE126 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGNING_REQUIRED = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -790,6 +815,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -842,8 +868,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -870,6 +898,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -889,8 +918,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -909,6 +940,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -921,7 +954,8 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -938,6 +972,7 @@
 				PRODUCT_NAME = Ogra;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -946,7 +981,8 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -962,6 +998,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.Ogra;
 				PRODUCT_NAME = Ogra;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
