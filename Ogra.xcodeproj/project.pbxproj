@@ -30,6 +30,13 @@
 		5559D7A71BFF8D4200DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D7A61BFF8D4200DBE126 /* Argo.framework */; };
 		5559D7A91BFF8D7E00DBE126 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D7A31BFF8D1B00DBE126 /* Argo.framework */; };
 		5559D7AB1BFF8D8B00DBE126 /* Argo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5559D7A31BFF8D1B00DBE126 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFA9292C1DC720C70064AE02 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559D79A1BFF8C3B00DBE126 /* Argo.framework */; };
+		BFA9292E1DC720C70064AE02 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA9292D1DC720C70064AE02 /* Runes.framework */; };
+		BFA9292F1DC720E90064AE02 /* Runes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFA9292D1DC720C70064AE02 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFA929311DC721310064AE02 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA929301DC721310064AE02 /* Runes.framework */; };
+		BFA929321DC721390064AE02 /* Runes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFA929301DC721310064AE02 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFA929351DC721630064AE02 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA929341DC721630064AE02 /* Runes.framework */; };
+		BFA929361DC721690064AE02 /* Runes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFA929341DC721630064AE02 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFF261B71B66432500C5552D /* Ogra.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF261B61B66432500C5552D /* Ogra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFF261EA1B6643A000C5552D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
 		BFF261EB1B6643A000C5552D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
@@ -66,6 +73,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BFA9292F1DC720E90064AE02 /* Runes.framework in CopyFiles */,
 				5559D79B1BFF8C3B00DBE126 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +84,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BFA929321DC721390064AE02 /* Runes.framework in CopyFiles */,
 				5559D79F1BFF8C8700DBE126 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +95,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BFA929361DC721690064AE02 /* Runes.framework in CopyFiles */,
 				5559D7AB1BFF8D8B00DBE126 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +112,9 @@
 		5559D79E1BFF8C8700DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
 		5559D7A31BFF8D1B00DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/tvOS/Argo.framework; sourceTree = "<group>"; };
 		5559D7A61BFF8D4200DBE126 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/watchOS/Argo.framework; sourceTree = "<group>"; };
+		BFA9292D1DC720C70064AE02 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/Mac/Runes.framework; sourceTree = "<group>"; };
+		BFA929301DC721310064AE02 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
+		BFA929341DC721630064AE02 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/tvOS/Runes.framework; sourceTree = "<group>"; };
 		BFCCEBBF1B684613000BDFB5 /* licence.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = licence.md; sourceTree = "<group>"; };
 		BFF261B31B66432500C5552D /* Ogra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ogra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF261B61B66432500C5552D /* Ogra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ogra.h; sourceTree = "<group>"; };
@@ -135,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA929351DC721630064AE02 /* Runes.framework in Frameworks */,
 				5559D7A91BFF8D7E00DBE126 /* Argo.framework in Frameworks */,
 				5559D7671BFF8A4A00DBE126 /* Ogra.framework in Frameworks */,
 			);
@@ -144,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA929311DC721310064AE02 /* Runes.framework in Frameworks */,
 				5559D7A01BFF8CAB00DBE126 /* Argo.framework in Frameworks */,
 				5559D7761BFF8A7200DBE126 /* Ogra.framework in Frameworks */,
 			);
@@ -153,6 +168,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA9292E1DC720C70064AE02 /* Runes.framework in Frameworks */,
+				BFA9292C1DC720C70064AE02 /* Argo.framework in Frameworks */,
 				5559D7851BFF8A9900DBE126 /* Ogra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +257,9 @@
 		BFF261ED1B66453600C5552D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFA929341DC721630064AE02 /* Runes.framework */,
+				BFA929301DC721310064AE02 /* Runes.framework */,
+				BFA9292D1DC720C70064AE02 /* Runes.framework */,
 				5559D7A81BFF8D4600DBE126 /* watchOS */,
 				5559D7A51BFF8D1F00DBE126 /* tvOS */,
 				BFF261EE1B66457900C5552D /* iOS */,
