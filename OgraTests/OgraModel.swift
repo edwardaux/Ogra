@@ -62,12 +62,25 @@ enum UInt64DialingCode: UInt64 {
 
 // MARK: - JSON Encoding and Decoding
 extension User: Decodable, Encodable {
-	static func create(_ id: Int, _ name: String, _ email: String?, _ pet: Pet?, _ nicknames: [String]?, _ accounts: [String:String]?, _ happy: Bool) -> User {
-		return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames, accounts:accounts, happy:happy)
+	static func create(id: Int) -> (_ name: String) -> (_ email: String?) -> (_ pet: Pet?) -> (_ nicknames: [String]?) -> (_ accounts: [String:String]?) -> (_ happy: Bool) -> User {
+		return
+			{ name in
+				{ email in
+					{ pet in
+						{ nicknames in
+							{ accounts in
+								{ happy in
+									return User(id:id, name:name, email:email, pet:pet, nicknames:nicknames, accounts:accounts, happy:happy)
+								}
+							}
+						}
+					}
+				}
+			}
 	}
 
 	static func decode(_ j: JSON) -> Decoded<User> {
-		return create
+		return User.create
 			<^> j <|   "id"
 			<*> j <|   "name"
 			<*> j <|?  "email"

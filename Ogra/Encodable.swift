@@ -70,7 +70,7 @@ extension Optional where Wrapped: Encodable {
 	}
 }
 
-extension Collection where Self: ExpressibleByDictionaryLiteral, Self.Key: ExpressibleByStringLiteral, Self.Value: Encodable, Iterator.Element == (Self.Key, Self.Value) {
+extension Collection where Self: ExpressibleByDictionaryLiteral, Self.Key: ExpressibleByStringLiteral, Self.Value: Encodable, Iterator.Element == (key: Self.Key, value: Self.Value) {
 	public func encode() -> JSON {
 		var values = [String : JSON]()
 		for (key, value) in self {
@@ -80,19 +80,19 @@ extension Collection where Self: ExpressibleByDictionaryLiteral, Self.Key: Expre
 	}
 }
 
-extension Optional where Wrapped: Collection & ExpressibleByDictionaryLiteral, Wrapped.Key: ExpressibleByStringLiteral, Wrapped.Value: Encodable, Wrapped.Iterator.Element == (Wrapped.Key, Wrapped.Value) {
+extension Optional where Wrapped: Collection & ExpressibleByDictionaryLiteral, Wrapped.Key: ExpressibleByStringLiteral, Wrapped.Value: Encodable, Wrapped.Iterator.Element == (key: Wrapped.Key, value: Wrapped.Value) {
 	public func encode() -> JSON {
 		return self.map { $0.encode() } ?? .null
 	}
 }
 
-extension Collection where Iterator.Element: Encodable {
+extension Collection where Self: ExpressibleByArrayLiteral, Self.Element: Encodable, Iterator.Element: Encodable {
 	public func encode() -> JSON {
 		return JSON.array(self.map { $0.encode() })
 	}
 }
 
-extension Optional where Wrapped: Collection, Wrapped.Iterator.Element: Encodable {
+extension Optional where Wrapped: Collection & ExpressibleByArrayLiteral, Wrapped.Element: Encodable, Wrapped.Iterator.Element == Wrapped.Element {
 	public func encode() -> JSON {
 		return self.map { $0.encode() } ?? .null
 	}
