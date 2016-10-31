@@ -119,7 +119,7 @@ class OgraTests: XCTestCase {
 		XCTAssertEqual(false.encode(), JSON.bool(false))
 		XCTAssertEqual(Int(42).encode(), JSON.number(NSNumber(value: 42)))
 		XCTAssertEqual(Double(42.42).encode(), JSON.number(NSNumber(value: 42.42)))
-		XCTAssertEqual(Float(42.42).encode(), JSON.number(NSNumber(value: 42.42)))
+		XCTAssertEqual(Float(42.42).encode(), JSON.number(NSNumber(value: Float(42.42))))
 		XCTAssertEqual(UInt(42).encode(), JSON.number(NSNumber(value: 42)))
 		XCTAssertEqual(UInt64(42).encode(), JSON.number(NSNumber(value: 42)))
 		XCTAssertEqual(("42" as String?).encode(), JSON.string("42"))
