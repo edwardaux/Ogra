@@ -107,6 +107,15 @@
 		EA47BB591AFC5E65002D2CCD /* user_without_key.json in Resources */ = {isa = PBXBuildFile; fileRef = EA47BB581AFC5E65002D2CCD /* user_without_key.json */; };
 		EA47BB5A1AFC5E65002D2CCD /* user_without_key.json in Resources */ = {isa = PBXBuildFile; fileRef = EA47BB581AFC5E65002D2CCD /* user_without_key.json */; };
 		EA4EAF7319DD96330036AE0D /* types_fail_embedded.json in Resources */ = {isa = PBXBuildFile; fileRef = EA4EAF7219DD96330036AE0D /* types_fail_embedded.json */; };
+		EA6600ED1D8C648F0032103D /* EmbeddedDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6600EC1D8C648F0032103D /* EmbeddedDecodingTests.swift */; };
+		EA6600EE1D8C648F0032103D /* EmbeddedDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6600EC1D8C648F0032103D /* EmbeddedDecodingTests.swift */; };
+		EA6600EF1D8C648F0032103D /* EmbeddedDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6600EC1D8C648F0032103D /* EmbeddedDecodingTests.swift */; };
+		EA6600F11D8C651E0032103D /* location_post.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6600F01D8C651E0032103D /* location_post.json */; };
+		EA6600F21D8C651E0032103D /* location_post.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6600F01D8C651E0032103D /* location_post.json */; };
+		EA6600F31D8C651E0032103D /* location_post.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6600F01D8C651E0032103D /* location_post.json */; };
+		EA6600F51D8C65940032103D /* bad_location_post.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6600F41D8C65940032103D /* bad_location_post.json */; };
+		EA6600F61D8C65940032103D /* bad_location_post.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6600F41D8C65940032103D /* bad_location_post.json */; };
+		EA6600F71D8C65940032103D /* bad_location_post.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6600F41D8C65940032103D /* bad_location_post.json */; };
 		EA6DD69C1AB383FB00CA3A5B /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6DD69B1AB383FB00CA3A5B /* PerformanceTests.swift */; };
 		EA6DD69D1AB383FB00CA3A5B /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6DD69B1AB383FB00CA3A5B /* PerformanceTests.swift */; };
 		EA6DD69F1AB384C700CA3A5B /* big_data.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6DD69E1AB384C700CA3A5B /* big_data.json */; };
@@ -277,7 +286,7 @@
 		4D5F6DD81B3832C200D79B25 /* user_with_nested_name.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user_with_nested_name.json; sourceTree = "<group>"; };
 		809754C11BADF34100C409E6 /* Argo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Argo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		809754CA1BADF34200C409E6 /* Argo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Argo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF92789C1B9365900038A7E1 /* RawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RawRepresentable.swift; path = Argo/Extensions/RawRepresentable.swift; sourceTree = SOURCE_ROOT; };
+		BF92789C1B9365900038A7E1 /* RawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawRepresentable.swift; sourceTree = "<group>"; };
 		D0592EB61B77DD7800EFEF39 /* Argo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Argo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA04D5901BBF1F40001DE23B /* Monad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monad.swift; sourceTree = "<group>"; };
 		EA04D5941BBF1F80001DE23B /* Functor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functor.swift; sourceTree = "<group>"; };
@@ -296,6 +305,9 @@
 		EA47BB551AFC5DAC002D2CCD /* user_with_bad_type.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user_with_bad_type.json; sourceTree = "<group>"; };
 		EA47BB581AFC5E65002D2CCD /* user_without_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user_without_key.json; sourceTree = "<group>"; };
 		EA4EAF7219DD96330036AE0D /* types_fail_embedded.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = types_fail_embedded.json; sourceTree = "<group>"; };
+		EA6600EC1D8C648F0032103D /* EmbeddedDecodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddedDecodingTests.swift; sourceTree = "<group>"; };
+		EA6600F01D8C651E0032103D /* location_post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location_post.json; sourceTree = "<group>"; };
+		EA6600F41D8C65940032103D /* bad_location_post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bad_location_post.json; sourceTree = "<group>"; };
 		EA6DD69B1AB383FB00CA3A5B /* PerformanceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		EA6DD69E1AB384C700CA3A5B /* big_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = big_data.json; sourceTree = "<group>"; };
 		EABDF6891A9CD46100B6CC83 /* SwiftDictionaryDecodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictionaryDecodingTests.swift; sourceTree = "<group>"; };
@@ -305,7 +317,6 @@
 		EAD9FACF19D0EAB50031E006 /* Argo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Argo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD9FAD319D0EAB50031E006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD9FADA19D0EAB60031E006 /* ArgoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAD9FADD19D0EAB60031E006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD9FAF519D0F7900031E006 /* Decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decode.swift; sourceTree = "<group>"; };
 		EAD9FAFD19D2113C0031E006 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EAD9FAFF19D211630031E006 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -318,7 +329,7 @@
 		EAD9FB1119D30E660031E006 /* EmbeddedJSONDecodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddedJSONDecodingTests.swift; sourceTree = "<group>"; };
 		EAD9FB1319D30ED00031E006 /* comment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comment.json; sourceTree = "<group>"; };
 		EAD9FB1519D30F8D0031E006 /* post_no_comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = post_no_comments.json; sourceTree = "<group>"; };
-		EAD9FB1719D49A3E0031E006 /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestModel.swift; path = ../../../Argo/ArgoTests/Models/TestModel.swift; sourceTree = "<group>"; };
+		EAD9FB1719D49A3E0031E006 /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		EADADCB11A5DB6F600B180EC /* EquatableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableTests.swift; sourceTree = "<group>"; };
 		F802D4C21A5EE061005E236C /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		F802D4C51A5EE2D5005E236C /* url.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = url.json; sourceTree = "<group>"; };
@@ -331,7 +342,7 @@
 		F87EB69A1ABC5F1300E3B0AB /* decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = decode.swift; sourceTree = "<group>"; };
 		F87EB69B1ABC5F1300E3B0AB /* flatReduce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flatReduce.swift; sourceTree = "<group>"; };
 		F87EB69C1ABC5F1300E3B0AB /* sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sequence.swift; sourceTree = "<group>"; };
-		F87EB69E1ABC5F1300E3B0AB /* Decoded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Decoded.swift; path = Argo/Types/Decoded/Decoded.swift; sourceTree = SOURCE_ROOT; };
+		F87EB69E1ABC5F1300E3B0AB /* Decoded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoded.swift; sourceTree = "<group>"; };
 		F87EB69F1ABC5F1300E3B0AB /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		F87EB6A01ABC5F1300E3B0AB /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		F87EB6A11ABC5F1300E3B0AB /* StandardTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardTypes.swift; sourceTree = "<group>"; };
@@ -437,6 +448,7 @@
 		EAD9FAC519D0EAB50031E006 = {
 			isa = PBXGroup;
 			children = (
+				EAD9FAE819D0F5B50031E006 /* Resources */,
 				EAD9FAD119D0EAB50031E006 /* Argo */,
 				EAD9FADB19D0EAB60031E006 /* ArgoTests */,
 				EAD9FAD019D0EAB50031E006 /* Products */,
@@ -468,10 +480,9 @@
 				EAD9FAE919D0F6480031E006 /* Operators */,
 				F87EB6981ABC5F1300E3B0AB /* Functions */,
 				F8CBE6651A6451F800316FBC /* Extensions */,
-				EAD9FAE819D0F5B50031E006 /* Resources */,
 			);
 			name = Argo;
-			path = ../Argo/Argo;
+			path = Sources/Argo;
 			sourceTree = "<group>";
 		};
 		EAD9FADB19D0EAB60031E006 /* ArgoTests */ = {
@@ -481,18 +492,9 @@
 				EAD9FB0319D213F30031E006 /* JSON */,
 				EABDF68C1A9CD4EA00B6CC83 /* plists */,
 				EAD9FAFC19D2110D0031E006 /* Models */,
-				EAD9FADC19D0EAB60031E006 /* Supporting Files */,
 			);
 			name = ArgoTests;
-			path = ../Argo/ArgoTests;
-			sourceTree = "<group>";
-		};
-		EAD9FADC19D0EAB60031E006 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EAD9FADD19D0EAB60031E006 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = Tests/ArgoTests;
 			sourceTree = "<group>";
 		};
 		EAD9FAE819D0F5B50031E006 /* Resources */ = {
@@ -546,8 +548,10 @@
 				EA395DC31A52F8EB00EB607E /* array_root.json */,
 				EA395DC91A52FC1400EB607E /* root_object.json */,
 				EA6DD69E1AB384C700CA3A5B /* big_data.json */,
-				EA47BB551AFC5DAC002D2CCD /* user_with_bad_type.json */,
 				EA47BB581AFC5E65002D2CCD /* user_without_key.json */,
+				EA47BB551AFC5DAC002D2CCD /* user_with_bad_type.json */,
+				EA6600F01D8C651E0032103D /* location_post.json */,
+				EA6600F41D8C65940032103D /* bad_location_post.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -565,6 +569,7 @@
 				EA6DD69B1AB383FB00CA3A5B /* PerformanceTests.swift */,
 				EA47BB521AFC5B76002D2CCD /* DecodedTests.swift */,
 				EA1200CA1BAB5CBA006DDBD8 /* RawRepresentableTests.swift */,
+				EA6600EC1D8C648F0032103D /* EmbeddedDecodingTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -791,7 +796,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = thoughtbot;
 				TargetAttributes = {
 					809754C01BADF34100C409E6 = {
@@ -866,11 +871,13 @@
 				809755061BADF3ED00C409E6 /* root_object.json in Resources */,
 				809755021BADF3ED00C409E6 /* post_bad_comments.json in Resources */,
 				809755001BADF3ED00C409E6 /* post_no_comments.json in Resources */,
+				EA6600F31D8C651E0032103D /* location_post.json in Resources */,
 				809754F91BADF3ED00C409E6 /* user_with_email.json in Resources */,
 				8097550A1BADF3F200C409E6 /* types.plist in Resources */,
 				809755041BADF3ED00C409E6 /* types_fail_embedded.json in Resources */,
 				809755051BADF3ED00C409E6 /* array_root.json in Resources */,
 				809754FC1BADF3ED00C409E6 /* url.json in Resources */,
+				EA6600F71D8C65940032103D /* bad_location_post.json in Resources */,
 				809755091BADF3ED00C409E6 /* user_without_key.json in Resources */,
 				809754FF1BADF3ED00C409E6 /* comment.json in Resources */,
 			);
@@ -906,11 +913,13 @@
 				4D5F6DD91B3832C200D79B25 /* user_with_nested_name.json in Resources */,
 				EABDF6911A9CD4EA00B6CC83 /* types.plist in Resources */,
 				EAD9FB0A19D214AA0031E006 /* user_without_email.json in Resources */,
+				EA6600F11D8C651E0032103D /* location_post.json in Resources */,
 				EAD9FB0619D2143A0031E006 /* user_with_email.json in Resources */,
 				EAD9FB0B19D214AA0031E006 /* TemplateIcon2x.png in Resources */,
 				EA47BB591AFC5E65002D2CCD /* user_without_key.json in Resources */,
 				EA395DC41A52F8EB00EB607E /* array_root.json in Resources */,
 				F8E33FA51A51E0C20025A6E5 /* post_bad_comments.json in Resources */,
+				EA6600F51D8C65940032103D /* bad_location_post.json in Resources */,
 				EAD9FB1419D30ED00031E006 /* comment.json in Resources */,
 				F802D4C61A5EE2D5005E236C /* url.json in Resources */,
 			);
@@ -939,11 +948,13 @@
 				4D5F6DDA1B3832C200D79B25 /* user_with_nested_name.json in Resources */,
 				EABDF6921A9CD4EA00B6CC83 /* types.plist in Resources */,
 				F8EF756E1A4CEC7100BDCC2D /* user_without_email.json in Resources */,
+				EA6600F21D8C651E0032103D /* location_post.json in Resources */,
 				F8EF756D1A4CEC7100BDCC2D /* user_with_email.json in Resources */,
 				F8EF756F1A4CEC7100BDCC2D /* TemplateIcon2x.png in Resources */,
 				EA47BB5A1AFC5E65002D2CCD /* user_without_key.json in Resources */,
 				EA395DC51A52F8EE00EB607E /* array_root.json in Resources */,
 				EA395DC21A5209C000EB607E /* post_bad_comments.json in Resources */,
+				EA6600F61D8C65940032103D /* bad_location_post.json in Resources */,
 				F8EF75701A4CEC7100BDCC2D /* comment.json in Resources */,
 				F802D4C71A5EE2D5005E236C /* url.json in Resources */,
 			);
@@ -1007,6 +1018,7 @@
 				F8C592841CB726FF007C5ABC /* Booleans.swift in Sources */,
 				809754EA1BADF3E400C409E6 /* OptionalPropertyDecodingTests.swift in Sources */,
 				809754F81BADF3E400C409E6 /* URL.swift in Sources */,
+				EA6600EF1D8C648F0032103D /* EmbeddedDecodingTests.swift in Sources */,
 				809754F41BADF3E400C409E6 /* User.swift in Sources */,
 				809754EC1BADF3E400C409E6 /* TypeTests.swift in Sources */,
 				809754E81BADF3E400C409E6 /* PListDecodingTests.swift in Sources */,
@@ -1084,6 +1096,7 @@
 				F8C592821CB726FB007C5ABC /* Booleans.swift in Sources */,
 				EAD9FB0219D211C10031E006 /* Post.swift in Sources */,
 				EABDF6941A9CD4FC00B6CC83 /* PListDecodingTests.swift in Sources */,
+				EA6600ED1D8C648F0032103D /* EmbeddedDecodingTests.swift in Sources */,
 				EAD9FB1819D49A3E0031E006 /* TestModel.swift in Sources */,
 				EAD9FB0E19D215570031E006 /* OptionalPropertyDecodingTests.swift in Sources */,
 				EA47BB531AFC5B76002D2CCD /* DecodedTests.swift in Sources */,
@@ -1135,6 +1148,7 @@
 				F8C592831CB726FE007C5ABC /* Booleans.swift in Sources */,
 				F8EF756B1A4CEC6400BDCC2D /* EmbeddedJSONDecodingTests.swift in Sources */,
 				EABDF6951A9CD4FC00B6CC83 /* PListDecodingTests.swift in Sources */,
+				EA6600EE1D8C648F0032103D /* EmbeddedDecodingTests.swift in Sources */,
 				F8EF75751A4CEC7800BDCC2D /* TestModel.swift in Sources */,
 				F8EF75741A4CEC7800BDCC2D /* Post.swift in Sources */,
 				EA47BB541AFC5B76002D2CCD /* DecodedTests.swift in Sources */,
@@ -1174,6 +1188,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1182,7 +1197,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "$(SRCROOT)/Argo/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.Argo;
@@ -1198,6 +1213,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -1207,7 +1223,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "$(SRCROOT)/Argo/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.Argo;
@@ -1225,7 +1241,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = ArgoTests/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1241,7 +1257,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = ArgoTests/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1256,6 +1272,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BITCODE_GENERATION_MODE = marker;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchsimulator*]" = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -1264,7 +1281,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "$(SRCROOT)/Argo/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME)";
@@ -1282,6 +1299,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchsimulator*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1291,7 +1309,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "$(SRCROOT)/Argo/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME)";
@@ -1318,10 +1336,12 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1383,10 +1403,12 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1433,13 +1455,14 @@
 				BITCODE_GENERATION_MODE = marker;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Argo/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME)";
@@ -1455,12 +1478,13 @@
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Argo/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME)";
@@ -1477,7 +1501,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ArgoTests/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ArgoTests;
@@ -1489,7 +1513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = ArgoTests/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ArgoTests;
@@ -1511,7 +1535,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Argo/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -1534,7 +1558,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Argo/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -1553,7 +1577,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ArgoTests/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME:rfc1034identifier)";
@@ -1567,7 +1591,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				INFOPLIST_FILE = ArgoTests/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtbot.$(PRODUCT_NAME:rfc1034identifier)";

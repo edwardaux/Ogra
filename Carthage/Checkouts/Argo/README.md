@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/thoughtbot/Argo/master/Resources/Logo.png" width="250" />
+<img src="https://raw.githubusercontent.com/thoughtbot/Argo/master/web/Logo.png" width="250" />
 
 # Argo [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
@@ -23,7 +23,7 @@ Here is the current Swift compatibility breakdown:
 
 | Swift Version | Argo Version |
 | ------------- | ------------ |
-| 3.X           | master       |
+| 3.X           | 4.X          |
 | 2.2, 2.3      | 3.X          |
 | 2.0, 2.1      | 2.X          |
 | 1.2 - 2.0     | 1.X          |
